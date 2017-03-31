@@ -1,0 +1,65 @@
+.form {
+}
+.form legend {
+    border: none;
+    margin-bottom: 3rem;
+}
+.form fieldset {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form .btn {
+    font-size: 2rem;
+}
+
+.form-control {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: 3px solid #fff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.form-control::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+  font-size: 2.2rem;
+}
+.form-control:-ms-input-placeholder {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .form-control {
+        height: 58px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

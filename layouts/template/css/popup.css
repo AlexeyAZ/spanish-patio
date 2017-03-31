@@ -1,0 +1,92 @@
+.popup-modal .modal-dialog {
+    width: 296px;
+    margin: 30px auto;
+}
+.popup-modal.send-additional  .modal-dialog {
+    width: auto;
+    max-width: 400px;
+}
+.popup-modal.send-additional legend .h3 {
+    font-size: 20px;
+}
+.popup-modal.send-additional legend,
+.popup-modal.send-additional .form-group {
+    font-size: 14px;
+}
+
+
+.popup-modal .modal-content {
+    padding: 30px;
+    position: relative;
+}
+
+.popup-modal .modal-content {
+    padding: 30px;
+    position: relative;
+    border-radius: 0;
+}
+
+.popup-modal .modal-content .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+    width: 28px;
+    height: 28px;
+    color: #7f7f7e;
+    font-size: 40px;
+    line-height: 0;
+    text-align: center;
+    font-weight: 300;
+}
+.popup-modal .modal-content .close:hover {
+    color: #000;
+}
+
+.popup-modal .form-control {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: 2px solid #3f3e3c;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #3f3e3c;
+    font-size: 2.2rem;
+}
+
+.popup-modal .form-control::-moz-placeholder {
+  opacity: 1;
+  color: #3f3e3c;
+  font-size: 2.2rem;
+}
+.popup-modal .form-control:-ms-input-placeholder {
+  color: #3f3e3c;
+  font-size: 2.2rem;
+}
+.popup-modal .form-control::-webkit-input-placeholder {
+  color: #3f3e3c;
+  font-size: 2.2rem;
+}
+
+.popup-modal .form-group {
+    margin-bottom: 20px;
+}
+
+.popup-modal legend {
+    border: none;
+    margin-bottom: 3rem;
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .popup-modal .modal-dialog {
+        width: 430px;
+        margin: 30px auto;
+    }
+
+    .popup-modal .modal-content {
+        padding: 45px 60px;
+        position: relative;
+    }
+}
