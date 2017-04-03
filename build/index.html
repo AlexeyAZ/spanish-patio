@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Main</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="heading form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="heading form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 - 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 - 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 - 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 - 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 - 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 - 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+          <div class="header__item header__item_contacts rosbank"><a class="header__link phone phone_white phone-link fw-semibold" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="header__link link link_getcall js-small-btn fw-light" href="">Заказать звонок</a></div>
+        </div>
+      </header>
+      <div class="container color-white ta-center">
+        <div class="decor-line">
+          <div class="decor-line__img decor-line__img_sec1"></div>
+        </div>
+        <h2 class="miletta">Получите тройную прибыль, пока действуют санкции</h2>
+        <p class="text text_xl sec1__subtitle">Балуйте жителей вашего города испанскими деликатесами – зарабатывайте от 1,8 млн рублей в год</p><a class="btn-round btn-round_download fw-light" href="">Скачать презентацию</a>
+      </div>
+    </section>
+    <section class="sec sec2">
+      <div class="container">
+        <div class="sec2__text">
+          <h3 class="color-dred miletta">Русская франшиза испанских деликатесов</h3>
+          <p class="text text_m">Испания – родина вкуснейших вин, сыров и морских деликатесов. Однако санкции сократили поток продуктов из Европы в Россию на 43%!</p>
+          <p class="text text_m">Ценителей испанских продуктов не убавилось – а число мест, где продукты можно приобрести, уменьшилось почти до нуля.</p><img class="sec2__img-mobile" src="img/sec2-man.png" alt="">
+        </div>
+      </div>
+      <div class="sec-full sec-full_bg-gray sec2__sec-full">
+        <div class="container"><img class="sec2__img" src="img/sec2-man.png" alt="">
+          <div class="sec2__text">
+            <p class="text text_l">«Испанский дворик» не только пережил сокращение рынка, но и продолжил развитие по Москве и МО</p><a class="btn-round btn-round_download btn-round_clear fw-light js-small-btn" href="">Скачать презентацию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3"><img class="sec3__img sec3__img_top-left" src="img/sec3-top-left.png" alt=""><img class="sec3__img sec3__img_center-left" src="img/sec3-center-left.png" alt=""><img class="sec3__img sec3__img_top-right" src="img/sec3-top-right.png" alt="">
+      <div class="container">
+        <div class="sec3__border-container"><img class="sec3__border-img sec3__border-img_desktop" src="img/sec3-decor.png" alt=""><img class="sec3__border-img sec3__border-img_mobile" src="img/sec3-top-right.png" alt="">
+          <div class="sec3__border">
+            <h3 class="miletta ta-center">С 2012 года мы открыли 4 магазина испанских деликатесов</h3>
+            <p class="text text_l ta-center sec3__border-text">В основе нашего ассортимента – 400 наименований премиальной продукции из Испании:</p>
+            <ul class="sec3__border-list">
+              <li class="sec3__border-list-item">Хамон, сыровяленые колбасы и сыровяленая говядина</li>
+              <li class="sec3__border-list-item">Маслины, каперсы, артишоки, пекильо и спаржа</li>
+              <li class="sec3__border-list-item">Морепродукты </li>
+              <li class="sec3__border-list-item">Изысканные испанские десерты</li>
+              <li class="sec3__border-list-item">Сыры и сырные изделия</li>
+              <li class="sec3__border-list-item">Безалкогольные вина, сидр и пиво</li>
+              <li class="sec3__border-list-item">Оливковое масло, соленые и маринованные оливки</li>
+            </ul>
+          </div><img class="sec3__border-img sec3__border-img_mobile-right-bottom" src="img/sec3-center-right.png" alt=""><img class="sec3__border-img sec3__border-img_mobile-left-bottom" src="img/sec3-decor.png" alt="">
+        </div>
+        <div class="sec3__note"><img class="sec3__note-img" src="img/sec3-icon.png" alt=""><span class="text text_xl sec3__note-text">Наши постоянные клиенты – гурманы, кафе и рестораны.</span></div>
+        <div class="sec3__btn-container"><a class="btn-round fw-light js-small-btn" href="">Узнать подробности</a></div>
+      </div>
+      <div class="sec-full sec-full_bg-gray sec3__sec-full"><img class="sec3__img sec3__img_bottom-right" src="img/sec3-bottom-right.png" alt=""><img class="sec3__img sec3__img_center-right" src="img/sec3-center-right.png" alt="">
+        <div class="container">
+          <div class="sec3__bottom-text">
+            <p class="text text_xl">Востребованная продукция и эффективная реклама позволяет нам зарабатывать до 430 000 рублей в месяц чистыми с одного магазина</p>
+          </div>
+        </div><img class="sec3__img sec3__img_bottom-left" src="img/sec3-bottom-left.png" alt="">
+      </div>
+    </section>
+    <section class="sec sec4">
+      <div class="container">
+        <h3 class="color-dred miletta ta-center">Используйте наш опыт – и получите первую прибыль уже через 45 дней</h3>
+        <p class="text text_xl ta-center sec4__subtitle">В 2017 году мы возьмём в команду партнёров из 20 городов России. Станьте одним из них – получите всё необходимое:</p>
+        <ul class="sec4__list">
+          <li class="sec4__list-item">
+            <div class="sec4__list-border"><img class="sec4__list-img" src="img/sec4-img1.png" alt=""></div>
+            <p class="text text_m sec4__list-text">Пошаговый план открытия магазина</p>
+          </li>
+          <li class="sec4__list-item">
+            <div class="sec4__list-border"><img class="sec4__list-img" src="img/sec4-img2.png" alt=""></div>
+            <p class="text text_m sec4__list-text">Право использования бренда «Испанский дворик»</p>
+          </li>
+          <li class="sec4__list-item">
+            <div class="sec4__list-border"><img class="sec4__list-img sec4__list-img_3" src="img/sec4-img3.png" alt=""></div>
+            <p class="text text_m sec4__list-text">Регулярные поставки изысканных испанских деликатесов, хамона и масел</p>
+          </li>
+          <li class="sec4__list-item">
+            <div class="sec4__list-border"><img class="sec4__list-img sec4__list-img_4" src="img/sec4-img4.png" alt=""></div>
+            <p class="text text_m sec4__list-text">Маркетинговую стратегию и рекламные материалы</p>
+          </li>
+        </ul>
+        <p class="text text_xl sec4__text-container">Франшиза состоит из 10+ компонентов. Подробное описание смотрите в презентации:</p>
+        <div class="sec4__btn-container"><a class="btn-round btn-round_download btn-round_clear fw-light js-small-btn" href="">Скачать презентацию</a></div>
+      </div>
+      <div class="sec-full sec-full_bg-gray sec4__sec-full">
+        <div class="container sec4__bottom-container">
+          <div class="sec4__bottom-text-container">
+            <p class="text text_xl">Опыт в сфере торговли желателен, но не обязателен.</p>
+            <p class="text text_m">Главный критерий выбора партнёров – инициативность и совпадение взглядов на ведение бизнеса!</p>
+          </div><img class="sec4__bottom-img" src="img/sec4-man.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container">
+        <h3 class="color-dred miletta ta-center">Что потребуется для старта?</h3>
+        <ul class="sec5__list">
+          <li class="sec5__list-item">
+            <p class="sec5__list-title">650 000 ₽</p>
+            <p class="text text_m">Приобрести франшизу</p>
+          </li>
+          <li class="sec5__list-item">
+            <p class="sec5__list-title">45 <span>дней</span></p>
+            <p class="text text_m">Потратить время на запуск</p>
+          </li>
+          <li class="sec5__list-item">
+            <p class="sec5__list-title"><span>от</span> 1 600 000 ₽</p>
+            <p class="text text_m">Подготовить помещение и купить продукцию</p>
+          </li>
+        </ul>
+        <p class="text text_xl ta-center sec5__subtitle">Действуйте по нашим инструкциям, и заработайте от 1,8 млн рублей уже в первый год работы! при поддержке известного бренда!</p>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container color-white ta-center">
+        <h3 class="miletta">Откройте лавку испанских вкусностей в вашем городе при поддержке известного бренда!</h3>
+        <p class="text text_m">Реализуйте продукцию с наценкой до 60% и сделайте состояние на деликатесах из Европы.</p>
+        <div class="decor-line">
+          <div class="decor-line__img decor-line__img_sec6"></div>
+        </div>
+        <p class="text text_xl">Проверьте, доступен ли ваш город для приобретения франшизы?</p>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
+          <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
+            <div class="footer__social">
+              <p class="footer__social-title">Мы в социальных сетях</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block footer__block_contacts"><a class="footer__phone phone-link" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </footer>
+    </section>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

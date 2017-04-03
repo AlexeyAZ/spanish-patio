@@ -1,0 +1,20 @@
+.phone {
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 28px;
+
+    @include media(w1024) {
+        font-size: 18px;
+    }
+
+    @include media(w768) {
+        font-size: 15px;
+    }
+
+    &_white {
+        background-image: url("../img/icon-call-white.png");
+    }
+}

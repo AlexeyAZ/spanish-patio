@@ -1,0 +1,126 @@
+.sec4 {
+    overflow: hidden;
+    padding-top: 80px;
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 30px;
+
+        @include media(w768) {
+            flex-direction: column;
+        }
+    }
+
+    &__list-item {
+        text-align: center;
+        width: 25%;
+
+        @include media(w768) {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+
+    &__list-border {
+        border: 2px solid #deca9f;
+        display: inline-block;
+        margin-bottom: 40px;
+        position: relative;
+        height: 190px;
+        width: 190px;
+
+        @include media(w1024) {
+            height: 118px;
+            width: 118px;
+        }
+    }
+
+    &__list-img {
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+
+        @include media(w1024) {
+            width: 140%;
+        }
+
+        &_3 {
+            bottom: -30px;
+        }
+
+        &_4 {
+            bottom: -28px;
+
+            @include media(w1024) {
+                bottom: -16px;
+            }
+        }
+    }
+
+    &__list-text {
+        padding: 0 10px;
+    }
+
+    &__text-container {
+        margin-bottom: 30px;
+        width: 60%;
+
+        @include media(w768) {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__btn-container {
+        margin-bottom: 100px;
+
+        @include media(w768) {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__sec-full {
+        padding-top: 80px;
+
+        @include media(w768) {
+            padding-top: 30px;
+        }
+    }
+
+    &__bottom-container {
+        padding-bottom: 60px;
+
+        @include media(w768) {
+            padding-bottom: 200px;
+        }
+    }
+
+    &__bottom-text-container {
+        width: 50%;
+
+        @include media(w768) {
+            width: 70%;
+        }
+    }
+
+    &__bottom-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 500px;
+
+        @include media(w1024) {
+            width: 350px;
+        }
+
+        @include media(w768) {
+            right: -100px;
+            width: 250px;
+        }
+    }
+}

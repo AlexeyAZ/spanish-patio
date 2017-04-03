@@ -1,0 +1,65 @@
+.input {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    border: 2px solid #d7d7d7;
+    outline: none;
+    display: inline-block;
+    color: #6b6b6b;
+    font-family: "PFHandBookPro", sans-serif;
+    font-size: 34px;
+    padding: 0 35px;
+    height: 80px;
+
+    @include media (w1024) {
+        border-radius: 32px;
+        font-size: 30px;
+        height: 64px;
+    }
+
+    @include media (w768) {
+        border-radius: 25px;
+        font-size: 25px;
+        padding: 0 10px;
+        height: 50px;
+    }
+
+    &_city {
+        background-image: url("../img/input-map.png");
+        background-position: 20px center;
+        padding-left: 65px;
+    }
+
+    &_phone {
+        background-image: url("../img/input-phone.png");
+        background-position: 20px center;
+        padding-left: 65px;
+    }
+}
+
+.select {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    border: 2px solid #d7d7d7;
+    outline: none;
+    display: inline-block;
+    color: #6b6b6b;
+    font-family: "PFHandBookPro", sans-serif;
+    font-size: 36px;
+    padding: 0 35px;
+    height: 80px;
+
+    @include media (w1024) {
+        border-radius: 32px;
+        font-size: 30px;
+        height: 64px;
+    }
+
+    @include media (w768) {
+        border-radius: 25px;
+        font-size: 25px;
+        padding: 0 10px;
+        height: 50px;
+    }
+}

@@ -3,12 +3,29 @@
 @import "mixins";
 @import "helpers";
 @import "typography";
+@import "font-awesome/font-awesome";
 
 @import "app";
 
 @import "blocks/container";
+@import "blocks/sec";
+@import "blocks/sec-full";
+@import "blocks/thanks";
 
+@import "components/links";
+@import "components/btn";
+@import "components/input";
+@import "components/phone";
+@import "components/decor-line";
+@import "components/form";
 @import "components/header";
 @import "components/footer";
+
+@import "blocks/sec1";
+@import "blocks/sec2";
+@import "blocks/sec3";
+@import "blocks/sec4";
+@import "blocks/sec5";
+@import "blocks/sec6";
 
 @import "sprite";

@@ -1,0 +1,92 @@
+p {
+    margin-bottom: 0.5em;
+}
+
+.rosbank {
+    font-family: "RosbankSansTT", sans-serif;
+}
+.miletta {
+    font-family: "Miletta", sans-serif;
+}
+.fw-semibold {
+    font-weight: 600;
+}
+.fw-light {
+    font-weight: 300;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-dred {
+    color: $dark-red;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.text {
+
+    &_xl {
+        font-size: 35px;
+
+        @include media(w1024) {
+            font-size: 21px;
+        }
+
+        @include media(w768) {
+            font-size: 18px;
+        }
+    }
+
+    &_l {
+        font-size: 30px;
+
+        @include media(w1024) {
+            font-size: 18px;
+        }
+    }
+
+    &_m {
+        font-size: 25px;
+
+        @include media(w1024) {
+            font-size: 15px;
+        }
+
+        @include media(w768) {
+            font-size: 14px;
+        }
+    }
+}
+
+h2 {
+    border-bottom: 3px solid white;
+    font-size: 114px;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+
+    @include media(w1024) {
+        font-size: 70px;
+    }
+
+    @include media(w768) {
+        font-size: 46px;
+    }
+}
+h3 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 0.8em;
+
+    @include media(w1024) {
+        font-size: 50px;
+    }
+
+    @include media(w768) {
+        font-size: 46px;
+    }
+}

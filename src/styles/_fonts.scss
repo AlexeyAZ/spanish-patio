@@ -54,3 +54,15 @@
 	font-weight: 600;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Miletta';
+	src: url('../fonts/Miletta/hinted-Miletta-Typeface.eot');
+	src: url('../fonts/Miletta/hinted-Miletta-Typeface.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Miletta/hinted-Miletta-Typeface.woff2') format('woff2'),
+		url('../fonts/Miletta/hinted-Miletta-Typeface.woff') format('woff'),
+		url('../fonts/Miletta/hinted-Miletta-Typeface.ttf') format('truetype'),
+		url('../fonts/Miletta/hinted-Miletta-Typeface.svg#Miletta-Typeface') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

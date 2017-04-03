@@ -1,0 +1,297 @@
+.sec3 {
+    overflow: hidden;
+    padding-top: 100px;
+
+    @include media(w1024) {
+        padding-top: 60px;
+    }
+
+    &__img {
+        position: absolute;
+
+        &_top-left {
+            transform: translateX(-45%);
+            top: 0;
+
+            @include media(w1650) {
+                transform: translateX(-65%);
+            }
+
+            @include media(w1400) {
+                display: none;
+            }
+        }
+
+        &_center-left {
+            transform: translateX(-20%);
+            top: 50%;
+
+            @include media(w1650) {
+                transform: translateX(-60%);
+            }
+
+            @include media(w1400) {
+                display: none;
+            }
+        }
+
+        &_bottom-left {
+            bottom: 0;
+            left: 0;
+
+            @include media(w1650) {
+                transform: translate(-20%, 20%);
+            }
+
+            @include media(w1400) {
+                transform: translate(-40%, 30%);
+            }
+
+            @include media(w1280) {
+                transform: translate(-60%, 20%);
+            }
+
+            @include media(w768) {
+                transform: translate(0,0);
+                display: block;
+                max-width: 80%;
+                margin: 0 auto;
+                position: static;
+            }
+        }
+
+        &_top-right {
+            transform: translateX(30%);
+            right: 0;
+            top: 10%;
+
+            @include media(w1650) {
+                transform: translateX(50%);
+            }
+
+            @include media(w1400) {
+                display: none;
+            }
+        }
+
+        &_center-right {
+            transform: translateX(60%);
+            bottom: 70%;
+            right: 0;
+
+            @include media(w1650) {
+                transform: translateX(80%);
+            }
+
+            @include media(w1400) {
+                display: none;
+            }
+        }
+
+        &_bottom-right {
+            transform: translateX(8%);
+            right: 0;
+            bottom: 0;
+
+            @include media(w1650) {
+                transform: translate(40%, 20%);
+            }
+
+            @include media(w1280) {
+                transform: translate(60%, 40%);
+            }
+
+            @include media(w768) {
+                display: none;
+            }
+        }
+    }
+
+    &__border-container {
+        border: 68px solid transparent;
+        border-image-source: url("../img/sec3-border.png");
+        border-image-repeat: round;
+        border-image-slice: 25%;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        //padding: 56px;
+        border-image-width: 200px;
+        margin-bottom: 30px;
+        position: relative;
+
+        @include media(w600) {
+            margin-left: -60px;
+            margin-right: -60px;
+        }
+    }
+
+    &__border-img {
+        position: absolute;
+
+        &_desktop {
+            top: -160px;
+            left: -180px;
+
+            @include media(w1024) {
+                top: -100px;
+                left: -160px;
+            }
+
+            @include media(w768) {
+                display: none;
+            }
+        }
+
+        &_mobile {
+            transform: translate(-50%, -80%);
+            display: none;
+            left: 50%;
+            top: 0;
+
+            @include media(w768) {
+                display: block;
+                width: 200px;
+            }
+        }
+
+        &_mobile-left-bottom {
+            display: none;
+
+            @include media(w500) {
+                transform: translateX(-50px);
+                display: block;
+                top: calc(100% + 70px);
+                left: 0;
+                width: 100px;
+            }
+        }
+
+        &_mobile-right-bottom {
+            display: none;
+
+            @include media(w500) {
+                transform: translateX(100px);
+                display: block;
+                top: calc(100% + 60px);
+                right: 0;
+                width: 140px;
+            }
+        }
+    }
+
+    &__border {
+        background-color: $sec3-border-bg;
+        background-image: url("../img/sec3-decor1.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding: 10px 10px 30px;
+    }
+
+    &__border-text {
+        margin-bottom: 30px;
+    }
+
+    &__border-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @include media(w768) {
+            flex-direction: column;
+        }
+    }
+
+    &__border-list-item {
+        background-image: url("../img/ok-icon.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        font-size: 25px;
+        min-height: 25px;
+        width: 50%;
+
+        @include media(w1024) {
+            font-size: 15px;
+        }
+
+        @include media(w768) {
+            width: auto;
+        }
+
+        &:nth-child(odd) {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 40%;
+
+            @include media(w768) {
+                margin-left: 0;
+                margin-right: 0;
+                width: auto;
+            }
+        }
+    }
+
+    &__note {
+        text-align: center;
+        margin-bottom: 30px;
+        white-space: nowrap;
+
+        @include media(w600) {
+            white-space: normal;
+        }
+    }
+
+    &__note-img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+
+        @include media(w600) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__note-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__btn-container {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__sec-full {
+        padding: 80px 0 30px;
+
+        @include media(w768) {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+    }
+
+    &__bottom-text {
+        padding-left: 35%;
+        padding-right: 10%;
+
+        @include media(w1400) {
+            padding-left: 25%;
+            padding-right: 10%;
+        }
+
+        @include media(w1024) {
+            padding-left: 22%;
+            padding-right: 18%;
+        }
+
+        @include media(w768) {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

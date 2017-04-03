@@ -1,0 +1,51 @@
+.sec2 {
+    overflow: hidden;
+    padding-top: 60px;
+
+    &__text {
+        padding-bottom: 60px;
+        width: 60%;
+
+        @include media(w768) {
+            overflow: hidden;
+            padding-bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: -5%;
+        bottom: -30px;
+        width: 52%;
+
+        @include media(w1024) {
+            width: 44%;
+        }
+
+        @include media(w768) {
+            display: none;
+        }
+    }
+
+    &__img-mobile {
+        display: none;
+        position: relative;
+        bottom: -10px;
+        width: 90%;
+
+        @include media(w768) {
+            display: inline-block;
+        }
+    }
+
+    &__sec-full {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
