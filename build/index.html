@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Main</title>
+    <title>Испанский дворик</title>
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -28,7 +28,7 @@
         <div class="form__close"></div>
         <p class="heading form__title">Спасибо!</p>
         <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
-        <form class="form" id="bigForm">
+        <form class="form" method="POST" id="bigForm">
           <input class="js-hidden-name" type="hidden" name="name1">
           <input class="js-hidden-phone" type="hidden" name="phone1">
           <input class="js-hidden-phone" type="hidden" name="email1">
@@ -63,7 +63,7 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
-          <div class="header__item header__item_contacts rosbank"><a class="header__link phone phone_white phone-link fw-semibold" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="header__link link link_getcall js-small-btn fw-light" href="">Заказать звонок</a></div>
+          <div class="header__item header__item_contacts rosbank"><a class="header__link phone phone_white phone-link fw-semibold" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn fw-light" href="">Заказать звонок</a></div>
         </div>
       </header>
       <div class="container color-white ta-center">
@@ -71,7 +71,7 @@
           <div class="decor-line__img decor-line__img_sec1"></div>
         </div>
         <h2 class="miletta">Получите тройную прибыль, пока действуют санкции</h2>
-        <p class="text text_xl sec1__subtitle">Балуйте жителей вашего города испанскими деликатесами – зарабатывайте от 1,8 млн рублей в год</p><a class="btn-round btn-round_download fw-light" href="">Скачать презентацию</a>
+        <p class="text text_xl sec1__subtitle">Балуйте жителей вашего города испанскими деликатесами – зарабатывайте от 1,8 млн рублей в год</p><a class="btn-round btn-round_download fw-light js-small-btn" href="">Скачать презентацию</a>
       </div>
     </section>
     <section class="sec sec2">
@@ -173,17 +173,29 @@
       </div>
     </section>
     <section class="sec sec6">
-      <div class="container color-white ta-center">
+      <div class="container color-white ta-center" id="bottomFormContainer">
         <h3 class="miletta">Откройте лавку испанских вкусностей в вашем городе при поддержке известного бренда!</h3>
         <p class="text text_m">Реализуйте продукцию с наценкой до 60% и сделайте состояние на деликатесах из Европы.</p>
         <div class="decor-line">
           <div class="decor-line__img decor-line__img_sec6"></div>
         </div>
-        <p class="text text_xl">Проверьте, доступен ли ваш город для приобретения франшизы?</p>
+        <p class="text text_xl sec6__form-title">Проверьте, доступен ли ваш город для приобретения франшизы?</p>
+        <form class="sec6__form" data-next="#bigForm" id="bottomForm">
+          <label class="sec6__form-label">
+            <input class="input input_city" type="text" name="city" placeholder="Ваш город" required>
+          </label>
+          <label class="sec6__form-label">
+            <input class="input input_phone" type="text" name="phone" placeholder="Телефон" required>
+          </label>
+          <label class="sec6__form-label">
+            <input class="input" type="email" name="email" placeholder="E-mail" required>
+          </label>
+          <button class="btn-round">Проверить</button>
+        </form>
       </div>
       <footer class="footer">
         <div class="container footer__container">
-          <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
+          <p class="footer__text footer__text_copy">© Испанский дворик, 2017</p>
           <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
             <div class="footer__social">
               <p class="footer__social-title">Мы в социальных сетях</p>
@@ -194,11 +206,12 @@
               </ul>
             </div>
           </div>
-          <div class="footer__block footer__block_contacts"><a class="footer__phone phone-link" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+          <div class="footer__block footer__block_contacts"><a class="footer__phone phone phone_white phone-link fw-light" href="tel:88006005030" data-phone="88006005030">8 800 600-50-30</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
         </div>
       </footer>
     </section>
     <script src="scripts/vendor.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
   </body>
 </html>

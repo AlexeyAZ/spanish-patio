@@ -7,6 +7,7 @@
     padding-left: 28px;
 
     @include media(w1024) {
+        background-size: contain;
         font-size: 18px;
     }
 

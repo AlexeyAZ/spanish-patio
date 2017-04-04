@@ -5,7 +5,7 @@ $form-input-height: 62px;
 $form-input-padding: 25px;
 
 .form-wrap {
-    transition: 0.5s ease;;
+    transition: 0.5s ease;
     background-color: rgba(0,0,0,0.8);
     text-align: center;
     overflow: auto;
@@ -17,26 +17,36 @@ $form-input-padding: 25px;
     height: 100%;
     width: 100%;
     min-width: 320px;
-    z-index: -100;
+    z-index: 100;
 
     &_open {
         opacity: 1;
         visibility: visible;
-        z-index: 100;
+
+        .form-container {
+            opacity: 1;
+        }
     }
 }
 .form-open {
     overflow: hidden;
+
+    body {
+        overflow-y: scroll;
+    }
 }
 .form-container {
+    transition: 0.3s ease 0.3s;
     background-color: white;
     display: inline-block;
     text-align: left;
+    opacity: 0;
     margin-top: 50px;
     margin-bottom: 30px;
     padding: 50px 50px 60px;
     position: relative;
     width: 430px;
+    z-index: 100;
 
     @include media(w768) {
         padding: 20px 20px 30px;

@@ -16,7 +16,7 @@ div.form-wrap.form-wrap_big
             Спасибо!
         p.form__descr.
             В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим
-        form#bigForm.form
+        form(method="POST")#bigForm.form
             input(type="hidden" name="name1").js-hidden-name
             input(type="hidden" name="phone1").js-hidden-phone
             input(type="hidden" name="email1").js-hidden-phone

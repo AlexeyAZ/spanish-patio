@@ -1,0 +1,23 @@
+extends templates/layout
+
+block vars
+    - var title = 'Испанский дворик'
+
+block content
+    section.sec.thanks
+        include components/header
+        div.container.color-white.ta-center
+            div.decor-line
+                div.decor-line__img.decor-line__img_sec1
+            h2.miletta.thanks__title.
+                <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+            p.text.text_l.thanks__subtitle.
+                Мы постараемся связаться с вами в ближайшее время
+            p.text.text_l.thanks__subtitle.
+                График работы: с 9:00 до 23:00. Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий день
+            div.thanks__buttons
+                a(href="doc/mk.pdf").btn-round.btn-round_download.btn-round_download-column.fw-light.thanks__btn.
+                    Скачать презентацию
+                a(href="index.html").btn-round.btn-round_white.fw-light.ta-center.thanks__btn.
+                    Вернуться на сайт
+        include components/footer

@@ -1,6 +1,10 @@
 @mixin media($media) {
 
-    @if $media == w1650 {
+    @if $media == w1920 {
+        @media only screen and (max-width: 1920px) { @content; }
+    }
+
+    @else if $media == w1650 {
         @media only screen and (max-width: 1650px) { @content; }
     }
 

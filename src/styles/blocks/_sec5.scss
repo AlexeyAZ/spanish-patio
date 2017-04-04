@@ -11,6 +11,7 @@
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+        width: 100%;
 
         @include media(w1024) {
             margin-bottom: 30px;
@@ -22,6 +23,7 @@
     }
 
     &__list-item {
+        flex-shrink: 1;
         text-align: center;
         padding-right: 10px;
 

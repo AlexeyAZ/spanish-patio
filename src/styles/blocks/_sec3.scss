@@ -3,7 +3,7 @@
     padding-top: 100px;
 
     @include media(w1024) {
-        padding-top: 60px;
+        padding-top: 140px;
     }
 
     &__img {
@@ -11,7 +11,11 @@
 
         &_top-left {
             transform: translateX(-45%);
-            top: 0;
+            top: 5%;
+
+            @include media(w1920) {
+                top: 13%;
+            }
 
             @include media(w1650) {
                 transform: translateX(-65%);
@@ -40,19 +44,19 @@
             left: 0;
 
             @include media(w1650) {
-                transform: translate(-20%, 20%);
+                transform: translate(-30%, 20%);
             }
 
             @include media(w1400) {
-                transform: translate(-40%, 30%);
+                transform: translate(-50%, 30%);
             }
 
             @include media(w1280) {
-                transform: translate(-60%, 20%);
+                transform: translate(-70%, 20%);
             }
 
             @include media(w768) {
-                transform: translate(0,0);
+                transform: translate(7%,0);
                 display: block;
                 max-width: 80%;
                 margin: 0 auto;
@@ -131,11 +135,18 @@
 
         &_desktop {
             top: -160px;
-            left: -180px;
+            left: -260px;
+
+            @include media(w1400) {
+                top: -180px;
+                left: -260px;
+            }
 
             @include media(w1024) {
-                top: -100px;
-                left: -160px;
+                transform: translateX(-50%);
+                top: -200px;
+                left: 50%;
+                width: 100px;
             }
 
             @include media(w768) {
@@ -144,7 +155,7 @@
         }
 
         &_mobile {
-            transform: translate(-50%, -80%);
+            transform: translate(-50%, -140%);
             display: none;
             left: 50%;
             top: 0;
